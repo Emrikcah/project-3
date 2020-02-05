@@ -1,0 +1,16 @@
+:root{
+    --dark-blue: #2d3945;
+    --btn-blue: #4ebbb5;
+    --input-color: #eff0f1;
+    --label-color: #929eaa;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Merriweather', serif;
+}
