@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,121 @@
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Contact Me</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-bg-color">
+            <h1>the code review</h1>
+        </div>
+        <div class="header-text">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        <div class="header-line-one"></div>
+        <div class="header-line-two"></div>
+    </header>
+    <div class="container">
+
+        </di>
+        <hr>
+        <section id="contact-info">
+            <div class="container">
+
+                <form>
+                    <fieldset>
+                        <legend>contact information</legend>
+
+                        <div class="form-group">
+                            <label for="name">full name</label>
+                            <input type="text" name="name" id="name" placeholder="Required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">email address</label>
+                            <input type="email" name="email" id="email" placeholder="Required">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">phone number</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">street address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">city</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">state</label>
+                            <select name="state" id="state">
+                                <option value="georgia">Georgia</option>
+                                <option value="california">California</option>
+                                <option value="texas">Texas</option>
+                                <option value="florida">Florida</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip">zip code</label>
+                            <input type="text" name="zip" id="zip">
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </section>
+        <hr>
+        <section id="newsletter">
+            <div class="container">
+                <fieldset>
+                    <legend>newsletter</legend>
+                    <p>Select the newsletter you would like to recieve</p>
+                    <div class="form-group">
+
+                        <input type="checkbox" name="html-news" id="html-news">
+                        <label for="html-news" class="newsletter-labels">HTML News</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="css-news" id="css">
+                        <label for="css" class="newsletter-labels">CSS News</label>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="checkbox" name="js-news" id="js">
+                        <label for="js" class="newsletter-labels">Javascript News</label>
+                    </div>
+
+                    <p>Newsletter format</p>
+
+                    <div class="form-group">
+                        <input type="radio" name="news-format" id="html">
+                        <label for="html" class="newsletter-labels">HTML</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" name="news-format" id="text">
+                        <label for="text" class="newsletter-labels">Plain text</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <p>Other topics you'd like to hear about</p>
+                    <textarea name="user-bio" id="bio" cols="50" rows="7" ></textarea>
+                </fieldset>
+                <div class="form-group">
+                    <button type="submit" class="btn">Sign Up</button>
+                </div>
+               
+            </div>
+        </section>
+
 </body>
+
 </html>
