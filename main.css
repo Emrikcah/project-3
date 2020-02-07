@@ -1,5 +1,6 @@
 :root {
     --dark-blue: #2d3945;
+    --outline-color: #000080;
     --btn-blue: #4ebbb5;
     --input-color: #eff0f1;
     --label-color: #929eaa;
@@ -25,8 +26,20 @@ body {
     margin: 0 auto;
 }
 
-h1{
+.btn{
+    all: unset;
+    width: 100%;
+    background: var(--btn-blue);
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3rem;
     
+}
+
+#newsletter .btn-move{
+    padding: 2.5rem 0;
 }
 
 ul,
@@ -61,7 +74,7 @@ textarea {
     border-radius: 5px;
     background: var(--input-color);
     border: none;
-    outline: none;
+    outline-color: var(--outline-color);
 }
 
 /* Base end */
@@ -85,6 +98,10 @@ header {
 /* Header end */
 
 /* Contact */
+
+#contact-info{
+    padding: 3rem 0;
+}
 #contact-info label {
     text-transform: capitalize;
     padding-bottom: 10px;
@@ -115,6 +132,11 @@ input:focus::placeholder {
 /* Contact end */
 
 /* Newsletter */
+
+#newsletter{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
 #newsletter .newsletter-labels {
     display: inline-block;
 }
@@ -123,6 +145,12 @@ input:focus::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.italic{
+    text-transform: capitalize;
+    font-style: italic;
+    text-align: center;
 }
 
 input[type="radio"],
