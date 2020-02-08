@@ -134,6 +134,10 @@ input:focus::placeholder {
     color: transparent;
 }
 
+select{
+    color: var(--text-color);
+}
+
 /* Contact end */
 
 /* Newsletter */
