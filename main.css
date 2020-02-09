@@ -6,6 +6,7 @@
     --input-color: #eff0f1;
     --label-color: #929eaa;
     --text-color: #878787;
+    --line-color: #000;
 }
 
 /* Base */
@@ -27,7 +28,7 @@ body {
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     all: unset;
     width: 100%;
     background: var(--btn-blue);
@@ -36,15 +37,20 @@ body {
     border-radius: 5px;
     text-align: center;
     font-size: 1.3rem;
-    
+
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--btn-hover);
 }
 
-#newsletter .btn-move{
-    padding: 2.5rem 0;
+.line-one {
+    border-bottom: 4px solid var(--line-color);
+    margin-bottom: 4px;
+}
+
+.line-two {
+    border-bottom: 2px solid var(--line-color);
 }
 
 ul,
@@ -89,6 +95,10 @@ header {
     text-align: center;
 }
 
+h2 {
+    padding-bottom: 1rem;
+}
+
 .header-bg-color {
     background: var(--dark-blue);
     color: #fff;
@@ -96,7 +106,7 @@ header {
     padding: 1.5rem;
 }
 
-.header-text{
+.header-text {
     padding: 2rem 0 3rem 0;
 }
 
@@ -104,13 +114,19 @@ header {
 
 /* Contact */
 
-#contact-info{
+#contact-info {
     padding: 3rem 0;
 }
+
 #contact-info label {
     text-transform: capitalize;
     padding-bottom: 10px;
 }
+
+#contact-info legend {
+    padding-bottom: 1rem;
+}
+
 
 .form-group {
     display: flex;
@@ -134,7 +150,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-select{
+select {
     color: var(--text-color);
 }
 
@@ -142,10 +158,10 @@ select{
 
 /* Newsletter */
 
-#newsletter{
-    padding-top: 3rem;
+#newsletter {
     padding-bottom: 10rem;
 }
+
 #newsletter .newsletter-labels {
     display: inline-block;
 }
@@ -156,7 +172,11 @@ select{
     align-items: center;
 }
 
-.italic{
+#newsletter .newsletter-text {
+    padding: 1rem 0 1rem 0;
+}
+
+.italic {
     text-transform: capitalize;
     font-style: italic;
     text-align: center;
@@ -171,6 +191,36 @@ textarea {
     resize: none;
     box-sizing: border-box;
     width: 100%;
-  }
+}
+
+#newsletter .btn-move {
+    padding: 2.5rem 0;
+}
+
+#newsletter .line-two {
+    margin-bottom: 3rem;
+}
 
 /* Newsletter end */
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    #contact-info .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #contact-info label {
+        width: 15rem;
+    }
+
+    #contact-info input:not([name="zip"]),
+    select
+    {
+        width: 100%;
+    }
+}
