@@ -215,12 +215,18 @@ textarea {
     }
 
     #contact-info label {
-        width: 15rem;
+        width: 25%;
+        padding-bottom: 0;
     }
 
     #contact-info input:not([name="zip"]),
-    select
-    {
-        width: 100%;
+    select {
+        flex: 1;
     }
+
+    /* #contact-info label[for="zip"]{
+        padding-bottom: 0;
+        margin-right: 106px;
+    } */
+
 }
